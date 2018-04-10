@@ -1,0 +1,154 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "wrapper"
+@import "hamburger"
+@import "cb_hover"
+.grid
+	display: grid
+.body
+	transition: font-size 0.2s ease-in
+.top_menu
+	transition: width 0.2s ease-in
+.wrapper
+	background-color: #1A1A1A
+	background-image: none
+.wr_p_metro_info_icon
+	height: 20px
+	width: auto
+	display: inline-block
+	font-family: 'AzoftSansRegular'
+	padding: 0
+	margin: 0
+.wr_p_metro_info_name
+	color: #fff
+	margin-left: 0
+	padding-left: 0
+	height: 5vh
+	display: inline-block
+	font-family: 'AzoftSansRegular'
+	padding: 0
+	margin: 0
+	letter-spacing: 0px
+	vertical-align: middle
+	font-size: 1.4vw
+.wr_s_left_select
+	ul, a
+		text-decoration: none
+		list-style: none
+		font-family: 'AzoftSansRegular'
+		color: #fff
+.usual_a
+	&:hover
+		color: $blue
+.wr_s_left_select
+	ul
+		margin-left: $gutter*2
+		margin-top: 0
+		padding: 0
+		a.active
+			color: $blue
+			&:hover
+				color: #fff
+		a.in_active
+			opacity: .1
+			&:hover
+				color: #fff
+				opacity: 1
+				transition: opacity .17s ease-in
+.li_1lvl > a.wr_s_left_select_in_active
+	opacity: 0.1
+.li_2lvl > a.wr_s_left_select_in_active
+	opacity: 0.1
+.li_1lvl > a.wr_s_left_select_is_active
+	color: $blue
+.li_2lvl > a.wr_s_left_select_is_active
+	color: $blue
+.ul_2lvl
+	display: none
+.ul_3lvl
+	display: none
+
+.service_box-item
+	color: #000
+	h3
+		font-family: 'AzoftSansBold'
+	p
+		font-family: 'MyriadProRegular'
+.metro_button
+	background-color: transparent
+	text-decoration: none
+	display: inline-block
+	border: 2px solid #000
+	font-family: 'MyriadProBold'
+	color: #000
+	outline: none
+	overflow: hidden
+	z-index: 11
+	transition: color .3s cubic-bezier(.55,.055,.675,.19)
+	&::before, &::after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+	&::before
+		z-index: -2
+	&::after
+		z-index: -1
+	&::before
+		transform: translateX(-100%)
+		background: #000
+		transition: transform .3s cubic-bezier(.55,.055,.675,.19)
+	&::after 
+		background: $pink
+		transform: translateX(100%)
+		transition: transform .1s cubic-bezier(.16,.73,.58,.62)
+	&:hover
+		color: #fff
+		transition: color .3s cubic-bezier(.55,.055,.675,.19)
+		&::before
+			transform: translateX(0)
+	&:active
+		color: #fff
+		transition: color .1s cubic-bezier(.55,.055,.675,.19)
+		&::after
+			transform: translateX(0)
+
+.overlay
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.9)
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content
+	position: relative
+	top: 20%
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	vertical-align: middle
+	a
+		vertical-align: middle
+
+.overlay a
+	padding: 8px
+	text-decoration: none
+	font-size: 36px
+	color: #818181
+	display: inline-block
+	transition: 0.3s
+	width:  100%
+	vertical-align: middle
+.overlay a:hover, .overlay a:focus
+	color: #f1f1f1
+@import "media-index"
+@import "media-services"

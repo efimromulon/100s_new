@@ -1,0 +1,106 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "wrapper"
+@import "hamburger"
+@import "cb_hover"
+#salon_2, #salon_3, #salon_4, #salon_5, #salon_6, #salon_7, #salon_8
+	display: none
+#salon_i_2, #salon_i_3, #salon_i_4, #salon_i_5, #salon_i_6, #salon_i_7, #salon_i_8
+	display: none
+.grid
+	display: grid
+.body
+	transition: font-size 0.2s ease-in
+i
+	p
+		font-family: 'AzoftSansRegular'
+		padding: 0
+		margin: 0 0 0 -30px
+		display: inline-block
+.top_menu
+	transition: width 0.2s ease-in
+.wrapper
+	background-color: #1A1A1A
+	background-image: none
+.metro_box
+	color: #fff
+	font-family: 'AzoftSansRegular'
+.metro_info
+	font-family: 'AzoftSansRegular'
+.metro_button
+	background-color: transparent
+	text-decoration: none
+	display: inline-block
+	border: 2px solid #fff
+	font-family: 'MyriadProBold'
+	color: #fff
+	outline: none
+	overflow: hidden
+	margin: 0 2.5vw
+	transition: color .3s cubic-bezier(.55,.055,.675,.19)
+	&::before, &::after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+	&::before
+		z-index: -2
+	&::after
+		z-index: -1
+	&::before
+		transform: translateX(-100%)
+		background: white
+		transition: transform .3s cubic-bezier(.55,.055,.675,.19)
+	&::after 
+		background: $pink
+		transform: translateX(100%)
+		transition: transform .1s cubic-bezier(.16,.73,.58,.62)
+	&:hover
+		color: #000
+		transition: color .3s cubic-bezier(.55,.055,.675,.19)
+		&::before
+			transform: translateX(0)
+	&:active
+		color: #fff
+		transition: color .1s cubic-bezier(.55,.055,.675,.19)
+		&::after
+			transform: translateX(0)
+.overlay
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.9)
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content
+	position: relative
+	top: 20%
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	vertical-align: middle
+	a
+		vertical-align: middle
+
+.overlay a
+	padding: 8px
+	text-decoration: none
+	font-size: 36px
+	color: #818181
+	display: inline-block
+	transition: 0.3s
+	width:  100%
+	vertical-align: middle
+.overlay a:hover, .overlay a:focus
+	color: #f1f1f1
+@import "media-index"
+@import "media-salons"

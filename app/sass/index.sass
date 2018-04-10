@@ -1,0 +1,48 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "wrapper"
+@import "hamburger"
+@import "cb_hover"
+.grid
+	display: grid
+.body
+	transition: font-size 0.2s ease-in
+.top_menu
+	transition: width 0.2s ease-in
+.overlay
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.9)
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content
+	position: relative
+	top: 0
+	width: 100%
+	text-align: center
+	height: 100%
+	vertical-align: center
+	padding: calc( (100vh - (42vh + 64px +64px + 64px +64px)) / 2 ) 0px
+	a
+		vertical-align: center
+
+.overlay a
+	padding: 8px
+	text-decoration: none
+	font-size: 2.45vh
+	color: #818181
+	display: inline-block
+	transition: 0.3s
+	width:  100%
+	vertical-align: middle
+.overlay a:hover, .overlay a:focus
+	color: #f1f1f1
+@import "media-index"

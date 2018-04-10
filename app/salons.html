@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="API to View">
+    <title>apiView</title>
+  </head>
+  <body>
+    <div class="overlay" id="myNav_1">
+      <div class="overlay-content">
+        <div class="call_back_ol">
+          <form class="grid">
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Имя..." required="">
+            </div>
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Фамилия...">
+            </div>
+            <div class="cbol_item">
+              <input type="text" name="name" placeholder="Телефон...">
+            </div>
+            <div class="cbol_item">
+              <button class="button cb_hover_button">Записаться!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="m_overlay" id="myNav">
+      <div class="m_overlay-content"><a href="http://c22711.shared.hc.ru/ERomulon/index.html">ГЛАВНАЯ</a><a href="http://c22711.shared.hc.ru/ERomulon/salons.html">САЛОНЫ</a><a href="http://c22711.shared.hc.ru/ERomulon/prices.html">ЦЕНЫ</a><a href="http://c22711.shared.hc.ru/ERomulon/services.html">УСЛУГИ</a><a href="http://c22711.shared.hc.ru/ERomulon/5.html">ВАКАНСИИ</a></div>
+    </div>
+    <div class="wrapper grid">
+      <div class="wrapper_left wrapper_item">
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="social">
+          <ul>
+            <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (965) 340-50-94</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>salon100uslug@mail.ru</a></li>
+            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i>salon100uslug</a></li>
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>salon100uslug</a></li>
+            <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"> </i>salon100uslug</a></li>
+          </ul>
+        </div>
+        <div class="vacancy">
+          <h4>Ищешь работу?</h4>
+          <h5>Предлагаем работу рядом с домом и с высокой зарплатой</h5>
+        </div>
+        <button class="vacancy_button" href="#">ВАКАНСИИ</button>
+        <div class="footer">100 УСЛУГ&copy;2009-2017</div>
+        <div class="m_burger">
+          <button class="header_burger hamburger" id="burger" type="button"><span class="hamburger_box"><span class="hamburger_inner"></span></span></button>
+        </div>
+        <div class="m_social">
+          <ul>
+            <li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"> </i></a></li>
+          </ul>
+        </div>
+        <div class="m_footer">100 УСЛУГ&copy;2009-2017</div>
+      </div>
+      <div class="wrapper_right wrapper_item">
+        <div class="top_menu">
+          <nav class="top_menu_nav">
+            <ul>
+              <li><a class="top_menu_nav_anim" href="index.html">ГЛАВНАЯ</a></li>
+              <li><a class="top_menu_nav_anim" href="salons.html">
+                   САЛОНЫ</a></li>
+              <li><a class="top_menu_nav_anim" href="prices.html">
+                   ЦЕНЫ</a></li>
+              <li><a class="top_menu_nav_anim" href="services.html">
+                   УСЛУГИ</a></li>
+              <li><a class="top_menu_nav_anim" href="5.html">ВАКАНСИИ</a></li>
+              <li><a class="call_back_button" id="top_menu_cb_anim">ЗАПИСАТЬСЯ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="wr_salon_select grid">
+          <div class="wr_salon_select-item">
+            <div class="metro_select">
+              <ul class="metro_select_ul">
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">ЭЛЕКТРОЗАВОДСКАЯ</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">КРАСНЫЕ ВОРОТА</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">ТАГАНСКАЯ</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">РАМЕНКИ</span></a></li>
+                <li><a class="metro_select_a" href="#" type="active"><span class="metro_icon"></span><span class="metro_name">УНИВЕРСИТЕТ</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">ПРОСПЕКТ ВЕРНАДСКОГО</span></a></li>
+                <li><a class="metro_select_a" href="#"><span class="metro_icon"></span><span class="metro_name">КАШИРСКАЯ</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_1" style="background-image: url(img/s1.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_2" style="background-image: url(img/s2.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_3" style="background-image: url(img/s3.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_4" style="background-image: url(img/s4.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_5" style="background-image: url(img/s5.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_6" style="background-image: url(img/s6.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_7" style="background-image: url(img/s7.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item ssi_i" id="salon_i_8" style="background-image: url(img/s8.jpg); background-size: cover; z-index: 10;"></div>
+          <div class="wr_salon-select-item" id="map"></div>
+          <div class="wr_salon-select-item ssi" id="salon_1" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">ПРЕОБРАЖЕНСКАЯ ПЛОЩАДЬ</span></div>
+                <h4>Москва, Преображенский Вал, д. 4</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 963 975-31-11</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_2" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">ЭЛЕКТРОЗАВОДСКАЯ</span></div>
+                <h4>	Москва, ул. Большая Семеновская, д. 28</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 499 785-08-19</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_3" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">КРАСНЫЕ ВОРОТА</span></div>
+                <h4>Москва, Боярский переулок, д. 2</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 495 623-79-88</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_4" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">ТАГАНСКАЯ</span></div>
+                <h4>Москва, ул. Таганская, д. 26</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 495 911-18-96</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_5" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">РАМЕНКИ</span></div>
+                <h4>Москва, ул. Мичуринский пр-т, д. 21к1</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 495 931-00-54</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_6" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">УНИВЕРСИТЕТ</span></div>
+                <h4>Москва, ул. Строителей, д. 6, к. 3</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 495 930-12-31</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_7" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">ПРОСПЕКТ ВЕРНАДСКОГО</span></div>
+                <h4>Москва, ул. Удальцова, д. 15</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 499 431-32-86</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+          <div class="wr_salon-select-item ssi" id="salon_8" style="background-color: #101010;">
+            <div class="metro_box grid">
+              <div class="metro_box-item metro_info">
+                <div class="metro_span_box"><span class="metro_info_icon"></span><span class="metro_info_name">КАШИРСКАЯ</span></div>
+                <h4>Москва, Пролетарский проспект, д. 3</h4><i class="fa fa-mobile" aria-hidden="true">
+                  <p>+7 499 782-86-69</p></i>
+                <p>часы работы:<br>пн: 09.00-20.00<br>вт-вс: 09.00-21.00</p>
+              </div>
+              <div class="metro_box-item metro_info_buttons">
+                <button class="metro_button" id="metro_button_1" href="#">ЗАПИСАТЬСЯ</button>
+                <button class="metro_button" id="metro_button_2" href="#">К ЦЕНАМ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="css/salons.min.css">
+    <script src="https://use.fontawesome.com/e21d0d3332.js"></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

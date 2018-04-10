@@ -1,0 +1,198 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+@import "wrapper"
+@import "hamburger"
+@import "cb_hover"
+.th_1, .th_2, .th_3, .th_4, .th_5, .th_6, .th_7, .th_8, .th_9, .th_10
+	display: none
+.th_11, .th_12, .th_13, .th_14, .th_15, .th_16, .th_17, .th_18, .th_19, .th_20
+	display: none
+.th_21, .th_22, .th_23, .th_24, .th_25, .th_26, .th_27, .th_28, .th_29, .th_30
+	display: none
+.th_31, .th_32, .th_33, .th_34, .th_35, .th_36, .th_37, .th_38, .th_39, .th_40
+	display: none
+.th_41, .th_42, .th_43, .th_44, .th_45, .th_46, .th_47, .th_48, .th_49, .th_50
+	display: none
+.th_51, .th_52, .th_53, .th_54, .th_55
+	display: none
+#wrpmin_2, #wrpmin_3, #wrpmin_4, #wrpmin_5, #wrpmin_6, #wrpmin_7, #wrpmin_8
+	display: none
+.grid
+	display: grid
+.body
+	transition: font-size 0.2s ease-in
+.top_menu
+	transition: width 0.2s ease-in
+.wrapper
+	background-color: #1A1A1A
+	background-image: none
+
+.wr_p_metro_info_icon
+	height: 20px
+	width: auto
+	display: inline-block
+	font-family: 'AzoftSansRegular'
+	padding: 0
+	margin: 0
+	
+.wr_p_metro_info_name
+	color: #fff
+	margin-left: 0
+	padding-left: 0
+	height: 5vh
+	display: inline-block
+	font-family: 'AzoftSansRegular'
+	padding: 0
+	margin: 0
+	letter-spacing: 0px
+	vertical-align: middle
+
+
+
+
+.wr_p_left_select
+	ul, a
+		text-decoration: none
+		list-style: none
+		font-family: 'AzoftSansRegular'
+		color: #fff
+.usual_a
+	&:hover
+		color: $blue
+.wr_p_left_select
+	ul
+		margin-left: $gutter*2
+		margin-top: 0
+		padding: 0
+		a.active
+			color: $blue
+			&:hover
+				color: #fff
+		a.in_active
+			opacity: .1
+			&:hover
+				color: #fff
+				opacity: 1
+				transition: opacity .17s ease-in
+.li_1lvl > a.wr_p_left_select_in_active
+	opacity: 0.1
+.li_2lvl > a.wr_p_left_select_in_active
+	opacity: 0.1
+.li_1lvl > a.wr_p_left_select_is_active
+	color: $blue
+.li_2lvl > a.wr_p_left_select_is_active
+	color: $blue
+.ul_2lvl
+	display: none
+.ul_3lvl
+	display: none
+.wr_p_left_select_a
+	ul
+		margin-left: $gutter*2
+		margin-top: 0
+		padding: 0
+		a.active
+			color: $blue
+			&:hover
+				color: #fff
+		a.in_active
+			opacity: .1
+			&:hover
+				color: #fff
+				opacity: 1
+				transition: opacity .17s ease-in
+.table_head
+	color: #fff
+	font-family: 'AzoftSansRegular'
+.th_name_2
+	border: 1px solid $blue
+	margin-bottom: $gutter/2
+	text-align: center
+table
+	width: 100%
+	color: #fff
+	font-family: 'AzoftSansRegular'
+	border-collapse: collapse
+	tbody
+		border: 2px solid #403B3F
+		th, td
+			border: 1px solid #403B3F
+			text-align: center
+		td
+			padding-left: $gutter
+.t_name
+	text-align: left
+#burger
+	z-index: 1
+.overlay
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.9)
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content
+	position: relative
+	top: 0
+	width: 100%
+	text-align: center
+	height: 100%
+	vertical-align: center
+	padding: calc( (100vh - (42vh + 64px +64px + 64px +64px)) / 2 ) 0px
+	a
+		vertical-align: center
+
+.overlay a
+	padding: 8px
+	text-decoration: none
+	font-size: 2.45vh
+	color: #818181
+	display: inline-block
+	transition: 0.3s
+	width:  100%
+	vertical-align: middle
+.overlay a:hover, .overlay a:focus
+	color: #f1f1f1
+.overlay_a
+	height: 100%
+	width: 0%
+	position: fixed
+	z-index: 999
+	top: 0
+	left: 0
+	background-color: rgb(0,0,0)
+	background-color: rgba(0,0,0, 0.9)
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content_a
+	position: relative
+	top: 0
+	width: 100%
+	text-align: center
+	height: 100%
+	vertical-align: center
+	padding: calc( (100vh - (42vh + 64px +64px + 64px +64px)) / 2 ) 0px
+	a
+		vertical-align: center
+
+.overlay_a a
+	padding: 8px
+	text-decoration: none
+	font-size: 2.45vh
+	color: #818181
+	display: inline-block
+	transition: 0.3s
+	width:  100%
+	vertical-align: middle
+.overlay_a a:hover, .overlay_a a:focus
+	color: #f1f1f1
+@import "media-index"
+@import "media-prices"

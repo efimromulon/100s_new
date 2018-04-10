@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='description', content='API to View')
+		title apiView
+	body
+		include includes/call_back.pug
+		include includes/m_menu.pug
+		.wrapper.grid
+			.wrapper_left.wrapper_item
+				include includes/left_menu.pug
+			.wrapper_right.wrapper_item
+				include includes/top_menu.pug
+				.call_back
+					form.grid
+						.cb_item
+							input(type = 'text', name = 'name', placeholder = 'Имя...', required ='')
+						.cb_item
+							input(type = 'text', name = 'name', placeholder = 'Фамилия...')
+						.cb_item
+							input(type = 'text', name = 'name', placeholder = 'Телефон...')
+						.cb_item
+							button.button
+								| Записаться!
+				.gallery.grid
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/1.jpg)')
+							span.gallery-name Парикмахерские услуги
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/map.jpg)')
+							span.gallery-name Выбрать салон
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/b3.jpg)')
+							span.gallery-name Маникюр
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/feet.jpg)')
+							span.gallery-name Педикюр
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/act.jpg)')
+							span.gallery-name Акции
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/b2.jpg)')
+							span.gallery-name Косметология
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/b5.jpg)')
+							span.gallery-name Солярий
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/b4.jpg)')
+							span.gallery-name Массаж
+					.gallery-item.grid
+						a(href="services.html")
+							span.gallery-img(style = 'background-image: url(img/7.jpg)')
+							span.gallery-name Вакансии
+
+		link(rel='stylesheet', href='css/index.min.css')
+		script(src='https://use.fontawesome.com/e21d0d3332.js')
+		script(src='js/jquery-2.1.4.js')
+		script(src='js/scripts.min.js')
+
